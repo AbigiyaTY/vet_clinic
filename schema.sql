@@ -34,6 +34,20 @@ ALTER TABLE animals ADD CONSTRAINT fk_owners FOREIGN KEY (owner_id) REFERENCES o
 -- ALTER TABLE animals DROP species_id;
 -- ALTER TABLE animals DROP owner_id;
 
+CREATE TABLE vets(
+    id serial PRIMARY KEY,
+    name varchar(255) NOT NULL,
+    age INTEGER,
+    date_of_graduation date
+);
 
+CREATE TABLE specializations (
+    species_id INT REFERENCES species(id),
+    vets_id INT REFERENCES vets(id)
+);
 
-
+CREATE TABLE visits (
+    animal_id INT REFERENCES animals(id),
+    vets_id INT REFERENCES vets(id),
+    date date
+);
