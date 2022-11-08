@@ -54,8 +54,8 @@ CREATE TABLE visits (
 
 CREATE INDEX idx_animal_id ON visits (animal_id);
 CREATE INDEX idx_vets_id ON visits (vets_id);
-CREATE INDEX idx_species_id ON specializations (species_id);
+CREATE INDEX email ON owners (email);
 
 explain analyze SELECT * FROM visits WHERE animal_id = 4;
 explain analyze SELECT * FROM visits WHERE vets_id = 2;
-explain analyze SELECT * FROM email WHERE email = 'owner_18327@mail.com';
+explain analyze SELECT * FROM owners WHERE email = 'owner_18327@mail.com';
