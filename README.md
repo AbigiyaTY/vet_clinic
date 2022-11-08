@@ -11,7 +11,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 ## ERD diagrame of the database
-![image](https://user-images.githubusercontent.com/98043302/200625527-10979785-acf2-4b98-abe2-f32f4ba87f86.png)
+![image](https://user-images.githubusercontent.com/98043302/200626653-f7b02cfc-e140-453d-b47d-a719b7d61928.png)
 
 👤 **Author**
 
